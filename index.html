@@ -9,6 +9,7 @@
   :root {
     --ink: #0F172A;
     --muted: #5B6B7F;
+    --hairline: #D3DCE8;
     --bg: #FBFCFE;
     --accent: #4F46E6;
   }
@@ -22,42 +23,60 @@
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
   }
+  header { border-bottom: 1px solid var(--hairline); }
+  .nav {
+    max-width: 1080px; margin: 0 auto; padding: 14px 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; color: var(--ink); font-weight: 700; font-size: 19px; letter-spacing: -0.01em; }
+  .brand:hover { text-decoration: none; }
+  .brand .mark { width: 38px; height: 38px; display: block; }
+  .links { font-size: 14px; }
+  .links a { color: var(--muted); }
+  .links a:hover { color: var(--ink); }
   main {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    min-height: calc(100vh - 67px);
+    display: flex; align-items: center; justify-content: center;
     padding: 48px 24px;
   }
   .card { text-align: center; max-width: 620px; }
-  h1 {
-    font-size: 42px;
-    line-height: 1.12;
-    letter-spacing: -0.02em;
-    margin: 0 0 14px;
-  }
+  .hero-mark { width: 108px; height: 108px; display: block; margin: 0 auto 26px; }
+  h1 { font-size: 42px; line-height: 1.12; letter-spacing: -0.02em; margin: 0 0 14px; }
   .tagline { color: var(--muted); font-size: 20px; margin: 0 0 20px; }
   .concept { font-size: 18px; margin: 0 0 30px; }
   .soon {
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--accent);
-    border: 1px solid #D3DCE8;
-    border-radius: 999px;
-    padding: 8px 16px;
-    margin: 0 0 28px;
+    display: inline-block; font-size: 13px; font-weight: 600;
+    letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent);
+    border: 1px solid var(--hairline); border-radius: 999px; padding: 8px 16px; margin: 0 0 28px;
   }
   .contact { color: var(--muted); font-size: 15px; margin: 0; }
   .contact a { color: var(--accent); text-decoration: none; }
 </style>
 </head>
 <body>
-  <main>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#top">
+        <svg class="mark" viewBox="0 0 512 512" aria-hidden="true">
+          <path d="M 144 96 H 330 L 416 182 V 368 Q 416 416 368 416 H 144 Q 96 416 96 368 V 144 Q 96 96 144 96 Z"
+                fill="none" stroke="#0F172A" stroke-width="26" stroke-linejoin="round"/>
+          <circle cx="330" cy="96" r="26" fill="#06B7D4"/>
+          <circle cx="416" cy="182" r="26" fill="#4F46E6"/>
+        </svg>
+        <span>MY AI Shortcut</span>
+      </a>
+      <nav class="links"><a href="#get">Get the agent</a></nav>
+    </div>
+  </header>
+  <main id="top">
     <div class="card">
-      <h1>An agent, already built.</h1>
+      <svg class="hero-mark" viewBox="0 0 512 512" aria-hidden="true">
+        <path d="M 144 96 H 330 L 416 182 V 368 Q 416 416 368 416 H 144 Q 96 416 96 368 V 144 Q 96 96 144 96 Z"
+              fill="none" stroke="#0F172A" stroke-width="26" stroke-linejoin="round"/>
+        <circle cx="330" cy="96" r="26" fill="#06B7D4"/>
+        <circle cx="416" cy="182" r="26" fill="#4F46E6"/>
+      </svg>
+      <h1 id="get">An agent, already built.</h1>
       <p class="tagline">MY AI Shortcut gets you started with AI quickly and easily.</p>
       <p class="concept">Everything you need to set up your own cloud link to Hermes — your
         personal AI assistant, ready to help you automate your life, build websites, and
