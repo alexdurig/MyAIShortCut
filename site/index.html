@@ -74,10 +74,14 @@
   footer { border-top: 1px solid var(--hairline); padding: 32px 24px 48px; text-align: center; }
   .slogan { font-weight: 700; margin: 0 0 10px; }
   .foot-product { color: var(--muted); font-size: 14px; margin: 0 0 10px; }
+  .foot-product a { color: var(--accent); text-decoration: none; }
   .foot-contact { color: var(--muted); font-size: 14px; margin: 0; }
   .foot-contact a { color: var(--accent); text-decoration: none; }
   .foot-links { font-size: 14px; margin: 0 0 10px; }
   .foot-links a { color: var(--muted); }
+  @media (max-width: 520px) {
+    .brand span { display: none; }
+  }
 </style>
 </head>
 <body>
@@ -92,7 +96,7 @@
         </svg>
         <span>MY AI SHORTCUT</span>
       </a>
-      <nav class="links"><a href="#watch">Watch</a> <a href="#get">Get the agent</a></nav>
+      <nav class="links"><a href="/shortcut">Shortcut of the Week</a><a href="#get">Get the agent</a></nav>
     </div>
   </header>
   <main id="top">
@@ -209,7 +213,7 @@
 
   <footer>
     <p class="slogan">Two brains. One coordinated system.</p>
-    <p class="foot-product">A Dual Brain Robotics product.</p>
+    <p class="foot-product">A <a href="https://dualbrainrobotics.com" target="_blank" rel="noopener">Dual Brain Robotics</a> product.</p>
     <p class="foot-contact">Partnerships and licensing: <a href="mailto:alex@dualbrainrobotics.com">alex@dualbrainrobotics.com</a></p>
     <p class="foot-links"><a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/privacy-policy">Privacy</a> · <a href="/terms-of-service">Terms</a></p>
   </footer>
