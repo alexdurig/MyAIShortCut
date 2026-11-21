@@ -59,6 +59,10 @@
   .block ol { margin: 0; padding-left: 22px; }
   .block li { margin: 0 0 12px; }
   .block p { margin: 0 0 14px; }
+  .tiers { display: flex; gap: 20px; justify-content: center; align-items: flex-start; flex-wrap: wrap; }
+  .tier { flex: 1 1 240px; max-width: 320px; text-align: center; }
+  .license { color: var(--muted); font-size: 14px; margin: 14px 0 0; }
+  .terms { color: var(--muted); font-size: 13px; text-align: center; margin: 28px 0 0; }
   #watch { max-width: 880px; }
   .block-sub { color: var(--muted); font-size: 18px; margin: -8px 0 22px; }
   .video {
@@ -168,6 +172,30 @@
     <p>Hermes will automate your life, send emails for you, build websites, and help you run your businesses.</p>
     <p>For the first 100 people, it's <strong>$49</strong>. After that, $97. It comes with a 30-day guarantee —
       if it's not for you, you get your money back.</p>
+  </section>
+
+  <section class="block" id="pricing">
+    <h2>What it costs</h2>
+    <p class="block-sub">Three tiers. One-time purchase. 30-day guarantee.</p>
+    <div class="tiers">
+      <div class="tier">
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+        <stripe-buy-button buy-button-id="buy_btn_1UeKQ7EDTlVGkqriDe5dwipy"
+                           publishable-key="pk_live_51UeJzYEDTlVGkqriyLEJQp8MsLU3BOXXOeDJXBwvrbsTNuPYaccZypw8uY771JibJDrS4VgOjREDx6iZO7YBoC4i00OnC7hL83"></stripe-buy-button>
+        <p class="license">Personal license — for one person. The opening price, limited to the first 100 buyers.</p>
+      </div>
+      <div class="tier">
+        <stripe-buy-button buy-button-id="buy_btn_1UeKUoEDTlVGkqri3jz3MeIp"
+                           publishable-key="pk_live_51UeJzYEDTlVGkqriyLEJQp8MsLU3BOXXOeDJXBwvrbsTNuPYaccZypw8uY771JibJDrS4VgOjREDx6iZO7YBoC4i00OnC7hL83"></stripe-buy-button>
+        <p class="license">Personal license — for one person.</p>
+      </div>
+      <div class="tier">
+        <stripe-buy-button buy-button-id="buy_btn_1UeKcEEDTlVGkqriNft1vtfp"
+                           publishable-key="pk_live_51UeJzYEDTlVGkqriyLEJQp8MsLU3BOXXOeDJXBwvrbsTNuPYaccZypw8uY771JibJDrS4VgOjREDx6iZO7YBoC4i00OnC7hL83"></stripe-buy-button>
+        <p class="license">Business license — multiple seats, for your team and client work, within one organization.</p>
+      </div>
+    </div>
+    <p class="terms">One-time purchase. Non-exclusive, non-transferable license to use the setup. No resale or redistribution.</p>
   </section>
 
   <section class="block">
