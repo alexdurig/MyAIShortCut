@@ -13,7 +13,8 @@ and gets the DBRA agent: persona, skills, routines, and a plain-English guide.
 - `cron/jobs.json` — starter routines (install paused; resume after review).
 - `guide/getting-started.md` — the buyer's setup guide.
 - `.env.EXAMPLE` — template for a bring-your-own model key.
-- `site/` — the marketing website source (not part of the profile).
+- `site/` — the marketing website source (not part of the profile). The Worker also
+  serves `/shortcut` (Shortcut of the Week), derived from the same template.
 
 ## Install (buyer)
 
