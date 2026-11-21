@@ -41,7 +41,7 @@ Hermes needs a model to think with. You have three options:
 ## 4. Install the agent
 
 ```
-hermes profile install <this repository>
+hermes profile install github.com/alexdurig/MyAIShortCut
 ```
 
 You'll be asked to sign in to the private repository. After that, the agent is

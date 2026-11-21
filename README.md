@@ -2,9 +2,22 @@
 
 MY AI Shortcut — myaishortcut.site
 
-- `index.html` — the single-page site (deployed as a Cloudflare Worker).
-- `logo.png` — brand mark.
-- `buyer-package/` — the Hermes Agent profile distribution a buyer receives:
-  - `skills/one-shot-tasks/` — the one-shot (local Code Mode) skill
-  - `guide/getting-started.md` — plain-English setup guide
-  - `README.md` — what the package is and how to install it
+This repository is a **Hermes Agent profile distribution**. A buyer installs it
+and gets the DBRA agent: persona, skills, routines, and a plain-English guide.
+
+## Layout
+
+- `distribution.yaml` — the profile manifest (name, version).
+- `SOUL.md` — the agent's persona.
+- `skills/one-shot-tasks/` — the one-shot (local Code Mode) skill.
+- `cron/jobs.json` — starter routines (install paused; resume after review).
+- `guide/getting-started.md` — the buyer's setup guide.
+- `.env.EXAMPLE` — template for a bring-your-own model key.
+- `site/` — the marketing website source (not part of the profile).
+
+## Install (buyer)
+
+```
+hermes profile install github.com/alexdurig/MyAIShortCut
+hermes -p my-ai-shortcut chat
+```

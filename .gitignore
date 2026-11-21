@@ -1,0 +1,20 @@
+# Credentials — never ship
+.env
+auth.json
+*.key
+
+# User data — never ship
+memories/
+sessions/
+state.db*
+logs/
+workspace/
+plans/
+cache/
+
+# Cron runtime state (jobs.json itself is shipped)
+cron/*
+!cron/jobs.json
+
+# OS noise
+.DS_Store
