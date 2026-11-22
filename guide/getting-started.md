@@ -34,8 +34,9 @@ hermes
 Hermes needs a model to think with. You have three options:
 
 - **Free tier** — pay-as-you-go, free models only. Good for trying it out.
-- **Nous Portal Plus — $20/month (recommended)** — one subscription covers models,
-  usage, and one always-on cloud agent. Sign in at **https://portal.nousresearch.com**.
+- **Plus — $20/month (recommended)** — the Nous Portal plan we recommend: one
+  subscription covers models, usage, and one always-on cloud agent. Sign in at
+  **https://portal.nousresearch.com**.
 - **Bring your own key** — connect an API key from another provider.
 
 ## 4. Install the agent
