@@ -23,6 +23,10 @@ configuration, skills, and routines) for Dual Brain Robotics.
 | `guide/getting-started.md` | This guide. |
 | `starter-site/` | A complete first website you can make your own. See section 8. |
 
+**One habit makes all of this work.** Whenever you wonder how to do something, ask
+your agent. It can read these files, change them, and explain anything in this guide
+— and if it cannot do something, it will tell you honestly.
+
 ## 2. Install Hermes Agent (free)
 
 Hermes Agent is free and open source (MIT license).
@@ -87,9 +91,25 @@ Inside `starter-site/` there is a complete small-business website: four pages, o
 stylesheet, one small script. There is **no build step** — open `index.html` in a
 browser and it works.
 
-It comes pre-filled with a sample bookkeeping business so every page reads like a
-real site rather than a blank form. Search the files for the word **EDIT** — those
-are the only places that need your own words:
+It comes pre-filled with a sample business ("Bluebird Bookkeeping") so every page
+reads like a real site rather than a blank form.
+
+### Let your agent do the renaming
+
+This is the part buyers love. Ask your agent:
+
+> "Show me every file that mentions Alexander Durig or Bluebird Bookkeeping."
+
+It will list them. Then tell it:
+
+> "Delete the ones I don't want. Keep the ones I like, and change them into my name."
+
+Your agent does the work and shows you what changed.
+
+### Or do it by hand
+
+Search the files for the word **EDIT** — those are the only places that need your own
+words:
 
 1. Business name (header, footer, page titles)
 2. Colors (six values at the top of `styles.css`)
@@ -97,12 +117,14 @@ are the only places that need your own words:
 4. Your email, phone, and hours
 5. Your photo
 
-The full walkthrough is in `starter-site/README.md`. Publishing is free — Cloudflare
-Pages, GitHub Pages, or Netlify all take the folder exactly as it is.
-
-**Tip:** ask your agent to do this with you. "Help me turn the starter site into my
-website" is exactly the kind of whole job it is built for.
+Full walkthrough: `starter-site/README.md`. Publishing is free — Cloudflare Pages,
+GitHub Pages, or Netlify all take the folder exactly as it is.
 
 ## 9. Need help?
 
-Return to **MY AI Shortcut** — myaishortcut.site — for support and updates.
+**Ask your agent first.** It can read these files and answer most questions on the
+spot — and it is happy to.
+
+**Email us anytime:** [alex@myaishortcut.site](mailto:alex@myaishortcut.site)
+
+And return to **MY AI Shortcut** — myaishortcut.site — for updates.
