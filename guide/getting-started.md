@@ -19,7 +19,8 @@ configuration, skills, and routines) for Dual Brain Robotics.
 | `SOUL.md` | The agent's persona — how it talks and works. |
 | `.env.EXAMPLE` | Template for your model connection. No secrets included. |
 | `skills/one-shot-tasks/` | The skill that lets the agent run a whole multi-step job in one go. |
-| `cron/jobs.json` | Two starter routines (morning brief, weekly review). Ships paused. |
+| `cron/jobs.json` | Three starter routines (morning brief, weekly review, credit watch). Ships paused. |
+| `credit-watch/` | Watches your Nous Portal usage and warns before you run low. |
 | `guide/getting-started.md` | This guide. |
 | `starter-site/` | A complete first website you can make your own. See section 8. |
 
