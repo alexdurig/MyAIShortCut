@@ -15,9 +15,16 @@
       "monitor_url": null,
       "monitor_state": null,
       "context_from": null,
-      "schedule": { "kind": "cron", "expr": "0 9 * * *", "display": "0 9 * * *" },
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * *",
+        "display": "0 9 * * *"
+      },
       "schedule_display": "0 9 * * *",
-      "repeat": { "times": null, "completed": 0 },
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
       "enabled": false,
       "state": "paused",
       "paused_at": null,
@@ -39,7 +46,7 @@
     {
       "id": "weekly-review-01",
       "name": "Weekly review",
-      "prompt": "Weekly review: look back over the past week — what got done, what stalled, and the top three priorities for next week. Keep it to five lines.",
+      "prompt": "Weekly review: look back over the past week \u2014 what got done, what stalled, and the top three priorities for next week. Keep it to five lines.",
       "skills": [],
       "skill": null,
       "model": null,
@@ -51,9 +58,61 @@
       "monitor_url": null,
       "monitor_state": null,
       "context_from": null,
-      "schedule": { "kind": "cron", "expr": "0 17 * * 0", "display": "0 17 * * 0" },
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 17 * * 0",
+        "display": "0 17 * * 0"
+      },
       "schedule_display": "0 17 * * 0",
-      "repeat": { "times": null, "completed": 0 },
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": false,
+      "state": "paused",
+      "paused_at": null,
+      "paused_reason": "Ships paused; resume after reviewing.",
+      "created_at": null,
+      "next_run_at": null,
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "last_delivery_unverified": null,
+      "last_failure": null,
+      "failure_streak": 0,
+      "deliver": "local",
+      "origin": null,
+      "enabled_toolsets": null,
+      "workdir": null
+    },
+    {
+      "id": "credit-watch-01",
+      "name": "Credit watch",
+      "prompt": "Run the credit watch script and report this account's Nous Portal usage in two plain lines: plan and monthly charge, how much of the allowance is used, and whether auto top-up is on or off. Warn clearly if any gauge is at or above 80 percent. Never print tokens.",
+      "skills": [
+        "credit-watch"
+      ],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1",
+        "display": "0 9 * * 1"
+      },
+      "schedule_display": "0 9 * * 1",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
       "enabled": false,
       "state": "paused",
       "paused_at": null,
