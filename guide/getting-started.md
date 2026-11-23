@@ -84,6 +84,9 @@ in step 2, then run the command again.
 hermes -p my-ai-shortcut chat
 ```
 
+The first time, Hermes may ask you to sign in to your Nous account — that is
+expected, and it is the same account from step 3. It takes about a minute.
+
 That's it — you're talking to your agent.
 
 ## 6. Keep it up to date
