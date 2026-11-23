@@ -54,6 +54,11 @@ Hermes needs a model to think with. You have three options:
   **https://portal.nousresearch.com**.
 - **Bring your own key** — connect an API key from another provider.
 
+**Your agent watches your usage.** Ask it any time what you have used. It reads
+your own Nous Portal account, tells you plainly, and flags when you are running
+low. Keep auto top-up off and nothing extra can ever be charged without you
+asking.
+
 ## 4. Install the agent
 
 **First, a free GitHub account.** Go to **https://github.com** and sign up — it
