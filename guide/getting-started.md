@@ -56,12 +56,27 @@ Hermes needs a model to think with. You have three options:
 
 ## 4. Install the agent
 
+Two quick things first:
+
+1. **A free GitHub account.** If you do not have one yet, make one at
+   **https://github.com** — it takes two minutes. You will use the email address
+   you signed up with.
+2. **Accept your invitation.** We send a repository invitation to that email
+   address. Open it and click **Accept**. (It also shows up at
+   **github.com/notifications**.)
+
+Then run this command:
+
 ```
 hermes profile install github.com/alexdurig/MyAIShortCut
 ```
 
-You'll be asked to sign in to the private repository. After that, the agent is
-installed as its own profile.
+It will ask you to sign in to GitHub. That is normal — signing in is how the
+private repository is opened to you. After that, the agent is installed as its
+own profile.
+
+If it says it cannot see the repository, check that you accepted the invitation
+in step 2, then run the command again.
 
 ## 5. Start chatting
 
